@@ -32,6 +32,10 @@ public class Animal {
         this.sexoAnimal = sexoAnimal;
     }
 
+    public Animal() {
+    }
+
+
 
 
     public Cliente getDonoAnimal() {

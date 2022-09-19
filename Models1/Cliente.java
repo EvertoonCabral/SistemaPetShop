@@ -21,10 +21,24 @@ public class Cliente extends Pessoa{
     public Cliente(int id, String name, Endereco endereco, Telefone telefone, String cpf, EnumSexoPessoa sexoPessoa) {
         super(id, name, endereco, telefone, cpf, sexoPessoa);
     }
-  
-    
 
-        
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Animal getAnimalCliente() {
+        return animalCliente;
+    }
+
+    public void setAnimalCliente(Animal animalCliente) {
+        this.animalCliente = animalCliente;
+    }
+
+ 
     
     private int id;
     private Animal animalCliente;

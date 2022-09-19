@@ -18,12 +18,15 @@ public class Raca extends Animal {
     private String nameCientifico;
     private String ObsRaca;
 
-    public Raca(String nameCientifico, String ObsRaca, int id, String name, String proximaDoseVacina, Raca racaAnimal, int peso, Cliente donoAnimal, EnumSexoAnimal sexoAnimal) {
+    public Raca(int id, String name, String proximaDoseVacina, Raca racaAnimal, int peso, Cliente donoAnimal, EnumSexoAnimal sexoAnimal) {
         super(id, name, proximaDoseVacina, racaAnimal, peso, donoAnimal, sexoAnimal);
-        this.nameCientifico = nameCientifico;
-        this.ObsRaca = ObsRaca;
     }
 
+    public Raca() {
+    }
+
+
+    
 
 
     public String getNameCientifico() {

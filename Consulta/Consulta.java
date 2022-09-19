@@ -37,8 +37,8 @@ public class Consulta {
         this.formaPagamento = formaPagamento;
     }
 
-
-    
+    public Consulta() {
+    }
 
 
   
@@ -174,10 +174,12 @@ public class Consulta {
             valorVacina += listaVacina.get(i).getValorVacina();
                  }     
                  
-                 
-       vacina = JOptionPane.showInputDialog("Informe a proxima vacina do animal");
+       String auxVacina = JOptionPane.showInputDialog("O animal tomou alguma vacina? (S/N) ");
+       if(auxVacina.equals("S")){
+        vacina = JOptionPane.showInputDialog("Informe a proxima vacina do animal");
         animalConsulta.setProximaDoseVacina(vacina);
-        
+       }
+       
         total = valorConsulta + valorExame + valorMedic + valorVacina;
         
         return total;
