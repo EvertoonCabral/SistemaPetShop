@@ -63,7 +63,7 @@ public class Medico extends Pessoa {
 
     @Override
     public String toString() {
-        return "Medico{" + "id=" + id + ", CFMV=" + CFMV + ", disponivel=" + disponivel + '}';
+        return "Medico{" + "id=" + id + ", Nome =  "+ super.getName() + " CFMV=" + CFMV +" Sexo = "+super.getSexoPessoa() +", disponivel=" + disponivel + '}';
     }
 
 

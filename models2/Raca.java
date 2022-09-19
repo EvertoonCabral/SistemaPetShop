@@ -44,6 +44,11 @@ public class Raca extends Animal {
     public void setObsRaca(String ObsRaca) {
         this.ObsRaca = ObsRaca;
     }
+
+    @Override
+    public String toString() {
+        return "Raca{" + "nameCientifico=" + nameCientifico + ", ObsRaca=" + ObsRaca + '}';
+    }
     
   
     

@@ -10,33 +10,28 @@ package Consulta;
  */
 public class Exame {
     private int id;
-    private Consulta idConsulta;
-    private Medicamentos idMedicamento;
+   // private Consulta ConsultaPreviaDoExame;
     private String DescricaoExame;
     private double valorExame;
 
+    public Exame(int id, String DescricaoExame, double valorExame) {
+        this.id = id;
+        this.DescricaoExame = DescricaoExame;
+        this.valorExame = valorExame;
+    }
+
+
+
+    
+
+    
+    
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Consulta getIdConsulta() {
-        return idConsulta;
-    }
-
-    public void setIdConsulta(Consulta idConsulta) {
-        this.idConsulta = idConsulta;
-    }
-
-    public Medicamentos getIdMedicamento() {
-        return idMedicamento;
-    }
-
-    public void setIdMedicamento(Medicamentos idMedicamento) {
-        this.idMedicamento = idMedicamento;
     }
 
     public String getDescricaoExame() {
@@ -57,8 +52,14 @@ public class Exame {
 
     @Override
     public String toString() {
-        return "Exame{" + "id=" + id + ", idConsulta=" + idConsulta + ", idMedicamento=" + idMedicamento + ", DescricaoExame=" + DescricaoExame + ", valorExame=" + valorExame + '}';
+        return "Exame{" + "id=" + id + ", DescricaoExame=" + DescricaoExame + ", valorExame=" + valorExame + '}';
     }
+
+
+
+
+
+
     
     
 

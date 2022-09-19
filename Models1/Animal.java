@@ -6,6 +6,7 @@ package Models1;
 
 import Enums.EnumSexoAnimal;
 import java.util.ArrayList;
+import java.util.Scanner;
 import models2.Raca;
 
 /**
@@ -99,25 +100,29 @@ public class Animal {
  
 
     
-   /* public static void CadastrarAnimal(Animal animal, Raca raca, Cliente donoAnimal){
-      
+    public static void CadastrarAnimal(Animal animal,Cliente cliente, Raca raca, String donoAnimal, ArrayList<Animal>listaAnimal){
+    
+        Scanner leia = new Scanner (System.in);
+        
         System.out.println("Informe o Id:");
-        animal.setName(leia.nextInt());
+        animal.setId(leia.nextInt());
         System.out.println("\n Informe o nome do Animal: ");
         animal.setName(leia.next());
-        System.out.println("\n Informe ");
+        System.out.println("\n Informe o nome do dono do animal: ");
+        cliente.setName(leia.next());
         System.out.println("\n Informe o nome Cientifico do animal: ");
         raca.setNameCientifico(leia.next());
         System.out.println("\n Informe alguma Observação sobre o animal: ");
         raca.setObsRaca(leia.next());
-        animal.setRacaAnimal(raca);
-        System.out.println("\n Informe o peso do animal: ");
+        System.out.println("\n Informe o peso do animal em Kg: ");
         animal.setPeso(leia.nextInt());
+    
+        listaAnimal.add(animal);
         
     };
-    */
     
-    // public static void ListarAnimal();
+    
+    
 
     @Override
     public String toString() {
